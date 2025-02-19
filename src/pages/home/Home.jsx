@@ -33,7 +33,7 @@ const Home = () => {
               <span className="fixed-text">Bringing imagination to life through</span>
               <span className="change"></span>
             </p>
-            <button className="resume">Download Resume</button>
+            <button className="resume"><a href="/resume.pdf" download="Sameena-Resume.pdf">Download Resume</a></button>
           </div>
           <div className="image-my">
             <img src={myPhoto} alt="Sameena Akthar" className="my-image" />
