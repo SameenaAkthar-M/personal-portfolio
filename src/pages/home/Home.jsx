@@ -16,6 +16,10 @@ const Home = () => {
 
       tl.from(".main-content h2", { y: -30, opacity: 0, delay: 0.5 })
         .from(".fixed-text", { opacity: 0, y: 40 }, "-=0.5")
+        .from('.resume',{
+          opacity:0,
+          duration:1
+        })
         .from(".change", { opacity: 0, x: 20 }, "-=0.5")
         .from(".my-image", { x: "100%", opacity: 0, scale: 0 }, "-=0.5");
     }, homeRef);

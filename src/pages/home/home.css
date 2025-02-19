@@ -89,6 +89,10 @@
   cursor: pointer;
 }
 
+.resume a{
+  text-decoration: none;
+}
+
 .change::after{
   content: '';
   font-weight: 600;
