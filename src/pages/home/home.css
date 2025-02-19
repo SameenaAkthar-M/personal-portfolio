@@ -86,6 +86,7 @@
   border-radius: 10px;
   margin-top: 20px;
   font-size: 1.1vw;
+  cursor: pointer;
 }
 
 .change::after{
