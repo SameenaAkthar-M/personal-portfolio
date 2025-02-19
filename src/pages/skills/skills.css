@@ -1,0 +1,119 @@
+.skills-section{
+  height: calc(100vh - 125px);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.skills-section h1{
+  background: linear-gradient(to bottom, #9820c7, #bb8fce);
+  background-clip: text;
+  color: transparent;
+}
+
+.programming{
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.programming h4{
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+.logos{
+  display: flex;
+  justify-content: space-evenly;
+  gap: 3vw;
+  padding: 10px;
+}
+
+.logos img{
+  height: 100px;
+}
+
+.programming .logos{
+  display: flex;
+  justify-content: space-between;
+}
+
+.technologies{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.technologies h4{
+  font-size: 20px;
+  padding: 10px;
+}
+
+.technologies .techlogos{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 10px;
+}
+
+.technologies .techlogos img{
+  height: 100px;
+}
+
+.section1{
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.section2{
+  padding-top: 20px;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+@media screen and (max-width: 480px) {
+  .logos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    justify-items: center;
+  }
+
+  .logos img {
+    height: 80px;
+  }
+
+  .technologies .techlogos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-items: center;
+  }
+
+  .technologies .techlogos img {
+    height: 80px;
+  }
+
+  .section1, .section2 {
+    display: contents;
+  }
+}
+
+@media screen and (max-width: 1025px){
+  .skills-section{
+    justify-content: center;
+  }
+}

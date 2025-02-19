@@ -1,0 +1,118 @@
+.my-works{
+  height: calc(100vh - 125px);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+.grid-container{
+  display: flex;
+  overflow: auto;
+  width: 84%;
+  justify-content: flex-start;
+  padding: 10px 0;
+  position: relative;
+  gap: 20px;
+  transition: transform 1s ease-in-out;
+  margin: 20px;
+}
+
+.grid-container::-webkit-scrollbar {
+  height: 5px;
+}
+
+.grid-container::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #9820c7, #bb8fce);
+  border-radius: 10px;
+}
+
+
+.my-works h1{
+  font-size: 25px;
+  padding: 10px;
+  background: linear-gradient(to bottom, #9820c7, #bb8fce);
+  background-clip: text;
+  color: transparent; 
+}
+
+.card {
+  flex: 0 0 auto;
+  width: 250px;
+  margin-right: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  background: #f5f5f5;
+  transition: transform 0.3s ease;
+  height: 400px;
+  width: 300px;
+  background: rgba(255, 255, 255, 0.1) !important;
+  backdrop-filter: blur(10px) !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: transform 0.5s ease;
+}
+
+.card-image img{
+  height: 160px;
+  width: 200px;
+  background-position: center;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid rgba(255, 255, 255, 0.2);
+}
+
+.about-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: justify;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.about-image h4{
+  padding: 5px;
+  margin: 0 auto;
+}
+
+.about-image p{
+  padding: 20px;
+  padding-top: 0;
+  text-align: center;
+  font-size: 15px;
+  color: rgb(150, 150, 150);
+}
+
+.about-image a{
+  text-decoration: none;
+  text-align: center;
+  border: none;
+  background: linear-gradient(#9820c7, #bb8fce);
+  background-clip: text;
+  color: transparent; 
+}
+
+.about-image a:hover{
+  text-decoration: underline;
+  background: linear-gradient(#9820c7, #bb8fce);
+  background-clip: text;
+  color: transparent; 
+}
+
+@media screen and (max-width: 480px) {
+  .my-works{
+    overflow-y: visible;
+  }
+  .grid-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: visible;
+    gap: 15px;
+  }
+}

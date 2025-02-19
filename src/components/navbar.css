@@ -1,0 +1,53 @@
+.navbar{
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-outer{
+  width: 50%;
+  margin: auto;
+}
+
+.nav-links{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.nav-links a{
+  text-decoration: none;
+  font-weight: 600;
+  cursor: pointer;
+  display: block;
+}
+
+.bg-circle {
+  display: inline-block;
+  padding: 8px 20px;
+  border: none;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+}
+
+.bg-circle.active {
+  background: linear-gradient(to right, #9820c7, #bb8fce);
+  border-radius: 20px;
+}
+
+@media screen and (max-width: 480px){
+  .navbar-outer{
+    width: 90%;
+  }
+  .navbar .nav-links a{
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 1024px){
+  .navbar-outer{
+    width: 95%;
+  }
+  .navbar .nav-links a{
+    font-size: 14px;
+  }
+}

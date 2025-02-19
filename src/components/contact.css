@@ -1,0 +1,28 @@
+.contact-box {
+  position: fixed;
+  bottom: 0;
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-links{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.contact-links a{
+  font-size: 25px;
+}
+
+.contact-box h3{
+  background: linear-gradient(to bottom, #9820c7, #bb8fce);
+  background-clip: text;
+  color: transparent; 
+  font-size: 20px;
+  padding: 10px;
+}
