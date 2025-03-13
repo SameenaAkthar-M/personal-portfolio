@@ -2,6 +2,7 @@
   padding: 20px;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .navbar-outer{
@@ -18,12 +19,13 @@
   text-decoration: none;
   font-weight: 600;
   cursor: pointer;
-  display: block;
+  display: inline-block;
+  white-space: nowrap;
 }
 
 .bg-circle {
   display: inline-block;
-  padding: 8px 20px;
+  padding: 5px 20px;
   border: none;
   background-color: transparent;
   transition: background-color 0.3s ease;
@@ -41,12 +43,18 @@
   .navbar .nav-links a{
     font-size: 10px;
   }
+
 }
 
 @media screen and (max-width: 1024px){
   .navbar-outer{
     width: 95%;
   }
+
+  .bg-circle{
+    padding: 5px 14px;
+  }
+
   .navbar .nav-links a{
     font-size: 14px;
   }
