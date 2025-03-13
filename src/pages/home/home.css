@@ -120,7 +120,6 @@
   78% { content: "Web Develope"; }
   84%, 90% { content: "Web Developer"; }
   
-  /* Backspacing */
   91% { content: "Web Develope"; }
   92% { content: "Web Develop"; }
   93% { content: "Web Develo"; }
@@ -159,7 +158,7 @@
   }
 
   .image-my {
-    height: 45vh;
+    height: 40vh;
     width: 100%;
     order: -1;
   }
@@ -173,7 +172,7 @@
   }
 
   .my-image {
-    height: 250px;
+    height: 200px;
   }
 
   .main-content h2{
@@ -186,7 +185,7 @@
   }
 
   .fixed-text{
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .resume{
