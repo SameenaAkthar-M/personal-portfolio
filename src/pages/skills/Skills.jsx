@@ -38,7 +38,7 @@ const Skills = () => {
       });
     }, skillsRef);
 
-    return () => ctx.revert(); // Cleanup GSAP animations on unmount
+    return () => ctx.revert();
   }, []);
 
   return (
