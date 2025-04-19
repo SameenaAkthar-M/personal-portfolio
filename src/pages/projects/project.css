@@ -5,6 +5,7 @@
   flex-direction: column;
   align-items: center;
   overflow: hidden;
+  margin-top: 100px;
 }
 
 .grid-container{
@@ -107,6 +108,16 @@
 @media screen and (max-width: 480px) {
   .my-works{
     overflow-y: visible;
+    margin-top: 60px;
+  }
+  
+  .card-image img{
+    height: 100px;
+    width: 150px;
+    background-position: center;
+    border-radius: 50px !important;
+    object-fit: cover;
+    border: 5px solid rgba(255, 255, 255, 0.2);
   }
   .grid-container {
     flex-direction: column;

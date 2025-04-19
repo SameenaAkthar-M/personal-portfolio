@@ -12,3 +12,10 @@
 body{
   background-color: rgba(0, 0, 0, 0.963);
 }
+
+@media screen and (max-width: 768px){
+  *{
+    overflow-x: visible;
+    overflow-y: visible;
+  }
+}

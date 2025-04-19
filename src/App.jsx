@@ -25,8 +25,8 @@ const MotionWrapper = ({ children }) => (
       top: 0,
       left: 0,
       width: "100%",
-      height: "100vh",
-      overflow: "hidden",
+      minHeight: "100vh",
+      overflowX: "hidden",
       zIndex: 0,
     }}
   >
@@ -38,8 +38,11 @@ const App = () => {
   const location = useLocation();
 
   return (
+    <>
+    <div className="navi">
+    <Navbar />
+    </div>
     <div style={{ display: "flex", flexDirection: "column", minHeight: "100vh" }}>
-      <Navbar />
       <div className="page-container" style={{ position: "relative", flex: 1 }}>
         <AnimatePresence mode="wait">
         <MotionWrapper key={location.pathname}>
@@ -54,6 +57,7 @@ const App = () => {
       </div>
       <Contact/>
     </div>
+    </>
   );
 };
 

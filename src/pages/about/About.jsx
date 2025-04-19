@@ -24,7 +24,7 @@ const About = () => {
         .from(".part1 p", { y: 30, scale: 0, opacity: 0, stagger: 0.3 }, "-=0.2");
     }, aboutRef);
 
-    return () => ctx.revert(); // Cleanup GSAP animations on unmount
+    return () => ctx.revert();
   }, [location.pathname]);
 
   return (

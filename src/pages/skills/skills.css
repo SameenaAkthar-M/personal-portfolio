@@ -1,11 +1,12 @@
 .skills-section{
-  height: calc(100vh - 125px);
+  min-height: calc(100vh - 125px);
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   overflow-x: hidden;
   overflow-y: hidden;
+  margin-top: 90px;
 }
 
 .skills-section h1{

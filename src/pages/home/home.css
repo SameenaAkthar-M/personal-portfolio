@@ -1,11 +1,13 @@
 .home-page{
   margin: 0;
   padding: 0;
-  height: calc(100vh - 125px);
+  min-height: calc(100vh - 125px);
   width: 100%;
   box-sizing: border-box;
-  overflow-y: hidden;
+  overflow-y: visible;
   overflow-x: hidden;
+  margin-top: 100px;
+  margin-bottom: 50px;
 }
 
 .fixed-text {
